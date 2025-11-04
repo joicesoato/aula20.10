@@ -46,6 +46,11 @@ public class NotificacaoEmail extends Notificacao {
 
     @Override
     public void registrarLog() {
-        System.out.println(assunto);
+        System.out.println(
+            "[LOG] Email (" +
+            "Prioridade " +
+            this.nivelPrioridade +
+            ") para " +
+            this.destinatario);
     }
 }
